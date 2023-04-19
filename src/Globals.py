@@ -39,8 +39,8 @@ class PathConsts:
 
 class MessageConsts:
     """All constants for messages to user"""
-    already_exist_text = "A task with the same already exists. If you still " \
-                         "want to add a task click \"Add\" again"
+    already_exist_text = "A task with the same name already exists. If you " \
+                         "still want to add a task click \"Add\" again"
     wrong_date_text = "Wrong date, change it"
     not_digits_fields_text = "The following fields must be filled with " \
                              "numbers: "

@@ -70,7 +70,7 @@ class Task:
         self.__id = task_attributes["id"]
         self.__name = task_attributes["name"]
         self.__date = datetime.strptime(task_attributes["date"], "%d.%m.%Y")
-        tags = filter(lambda tag: tag != "", task_attributes["tags"])
+        tags = filter(lambda tag: not tag.isspace(), task_attributes["tags"])
         self.__tags = set(tags)
         self.__priority = int(task_attributes["priority"])
         self.__difficult = int(task_attributes["difficult"])

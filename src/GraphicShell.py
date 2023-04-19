@@ -52,6 +52,7 @@ class GraphicShell:
                 message = Task.check_task_attributes(task_attributes)
                 if message != "":
                     window["message"].update(message)
+                    in_any_case = False
                     continue
                 done = self.__manager.add_task(task_attributes,
                                                is_completed=self._is_completed_,
