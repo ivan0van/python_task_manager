@@ -104,10 +104,10 @@ Tasks - все задачи, у которых выбранное состоян
 git clone git@github.com:ivan0van/python_task_manager.git task_manager_project
 cd task_manager_project
 chmod +x install.sh 
-./install
+./install.sh
 ```
 ## Как запустить
 ```
-.\run
+./run.sh
 ```
 
